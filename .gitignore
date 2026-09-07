@@ -1,0 +1,27 @@
+
+# RPG Maker MZ logs / temp
+*.log
+*.tmp
+
+# Editor / IDE
+.idea/
+.vscode/
+*.iml
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Build / deploy outputs
+/dist
+/build
+
+# Visual and audio assets
+
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp3
+*.ogg
+*.wav
