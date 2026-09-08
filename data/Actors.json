@@ -9,5 +9,5 @@ null,
 {"id":7,"battlerName":"Actor1_7","characterIndex":6,"characterName":"Actor1","classId":3,"equips":[7,0,0,20,0],"faceIndex":6,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Eliot","nickname":"","note":"","profile":""},
 {"id":8,"battlerName":"Actor1_8","characterIndex":7,"characterName":"Actor1","classId":3,"equips":[7,0,0,20,0],"faceIndex":7,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Roza","nickname":"","note":"","profile":""},
 {"id":9,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
-{"id":10,"battlerName":"","characterIndex":0,"characterName":"$Edward_Earthen-expor7","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"Edward","nickname":"Earthen","note":"","profile":""}
+{"id":10,"battlerName":"","characterIndex":0,"characterName":"$Edward_Earthen-expor7","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"portraits_1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Edward","nickname":"Earthen","note":"","profile":""}
 ]
