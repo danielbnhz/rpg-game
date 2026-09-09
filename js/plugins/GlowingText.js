@@ -19,11 +19,16 @@
             fill: 0X3399FF,
             stroke: 0x000000,
             strokeThickness:4 ,
+            dropShadow: true,
+            dropShadowColor: 0x00CFFF,
+            dropShadowBlur: 10,
+            dropShadowDistance:0,
+            dropShadowAngle: 0
         };
         this._glowText = new PIXI.Text("A World To End", style);
 
-        this._glowText.x = (Graphics.boxHeight - this._glowText.width)/2;
-        this._glowText.y = 200;
+        this._glowText.x = (Graphics.boxHeight - this._glowText.width)/2 + 15;
+        this._glowText.y = 180;
 
         this.addChild(this._glowText);
 
@@ -35,6 +40,7 @@
 
         if (this._glowText) {
             const t = performance.now() / 1000;
+            this._glowText.alpha = 0.88 + Math.sin(t * 2.2) * .10;
         }
     }
 
