@@ -21,14 +21,15 @@
 
         const glowStyle = {
             fontFamily: "Roboto",
-            fontSize: "52px",
+            fontSize: 52,
             fontWeight: "bold",
             stroke: 0x00CFFF,
-            strokThickness: 10,
+            strokeThickness: 10,
+            fill: 0x00cfff,
         }
         const regularStyle = {
             fontFamily:"Roboto",
-            fontSize:44,
+            fontSize:52,
             fill: 0X3399FF,
             stroke: 0x000000,
             strokeThickness:4 ,
@@ -65,7 +66,7 @@
 
         this._titleGlow = new PIXI.Text(title, glowStyle)
 
-        const glowX = (Graphics.boxWidth - this._titleGlow.x) / 2 + 15;
+        const glowX = (Graphics.boxWidth - this._titleGlow.width) / 2 + 15;
 
         const titleY = 142;
 
@@ -80,7 +81,7 @@
 
         this._glowText = new PIXI.Text(title, regularStyle);
 
-        const titleX = (Graphics.boxWidth - this._titleGlow.x) / 2 + 15;
+        const titleX = (Graphics.boxWidth - this._titleGlow.boxWidth) / 2 + 15;
 
         this._glowText.x = titleX + 15;
         this._glowText.y = titleY - 20;
@@ -90,8 +91,8 @@
 
         this.regularText = new PIXI.Text(title, regularStyle);
 
-        this.regularText.x = (Graphics.boxHeight - this.regularText.width)/2 + 15;
-        this.regularText.y = 180;
+        this.regularText.x = (Graphics.boxWidth - this.regularText.width)/2 + 15;
+        this.regularText.y = 140;
 
         this.addChild(this.regularText);
 
