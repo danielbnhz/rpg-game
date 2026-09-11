@@ -22,8 +22,17 @@
 
         this._endParticles = [];
         this._endParticlesLayer = new PIXI.Container();
+        this._endParticlesLayer.name = "EndParticlesLayer";
 
-        this.addChild(this._endParticlesLayer);
+        const windowsLayerIndex = this.children.indexOf(this._windowLayer);
+
+        if (windowsLayerIndex >= 0) {
+            this.addChildAt(this._endParticlesLayer, windowsLayerIndex);
+        } else {
+            this.addChild(this._endParticlesLayer);
+        }
+
+
 
         this.createEndParticles();
     };
